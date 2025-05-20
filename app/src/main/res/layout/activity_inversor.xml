@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textoTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite o texto para inverter:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textoTitulo"
+        android:layout_marginTop="16dp"
+        android:hint="Digite aqui" />
+
+    <Button
+        android:id="@+id/btninverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inverter Texto"
+        android:layout_below="@id/editTexto"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnvoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:layout_below="@id/btninverter"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

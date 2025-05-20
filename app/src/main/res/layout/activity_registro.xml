@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textotituloregistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto do registro"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edittextoevento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:hint="Digite evento"
+        android:layout_below="@id/textotituloregistro"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/editdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:hint="Data"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_below="@id/edittextoevento"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btngravar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gravar Evento"
+        android:layout_below="@id/editdata"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:id="@+id/linhacabecalho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/btngravar"
+        android:layout_marginTop="24dp"
+        android:padding="8dp"
+        android:background="#DDDDDD">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ID"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Data"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Evento"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listeventos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linhacabecalho"
+        android:layout_marginTop="8dp" />
+</RelativeLayout>
